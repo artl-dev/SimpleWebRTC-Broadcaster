@@ -1,0 +1,225 @@
+#mainBody > main #discover > main,
+#mainBody > main #discover > footer > section {
+  background-color: rgba(0, 0, 0, 0.46);
+  padding: 20px;
+  color: #bada55;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+html,
+body {
+  min-height: 100vh;
+  min-width: 100vh;
+  height: 100%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  background-color: #7c7a7a;
+}
+
+#backgroundOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/Lines1.png');
+  background-color: rgba(0, 0, 0, 0.83);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat-x;
+  top: 0;
+  left: 0;
+}
+
+.hvCenter {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.finalFbShareBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.finalFbShareBtn:hover {
+  cursor: pointer;
+}
+.finalFbShareBtn p {
+  margin-bottom: 0;
+  padding-right: 10px;
+}
+
+#previewWrapper {
+  max-width: 800px;
+}
+#previewWrapper .pagePreviewImg {
+  width: 100%;
+}
+
+#mainBody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+#mainBody > header {
+  margin: 20px auto 0;
+  width: 100%;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 50px;
+}
+#mainBody > header .leftside {
+  flex: 1;
+}
+#mainBody > header .leftside #textlogoWrapper {
+  text-align: right;
+}
+#mainBody > header .leftside #textlogoWrapper .top {
+  font-weight: 300;
+  font-size: 1.8em;
+  letter-spacing: 1.2px;
+  text-decoration: underline;
+}
+#mainBody > header .leftside #textlogoWrapper .bottom {
+  font-weight: 700;
+  line-height: 0.5;
+  font-style: italic;
+  text-align: right;
+}
+#mainBody > header .middle {
+  width: 800px;
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+  color: #d39e00;
+  text-shadow: 2px 2px rgb(5, 5, 5);
+  padding-left: 130px;
+  padding-right: 130px;
+}
+#mainBody > header .middle h1 {
+  font-size: 17px;
+  color: #8b0000;
+  margin-top: 30px;
+  font-weight: 700;
+}
+#mainBody > header .rightside {
+  flex: 1;
+  text-align: right;
+}
+#mainBody > main {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 900px 1fr;
+}
+#mainBody > main #broadcastWrapper {
+  text-align: center;
+  color: #d39e00;
+}
+#mainBody > main #broadcastWrapper .videoActionsWrapper {
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+#mainBody > main #broadcastWrapper .videoWrapper video {
+  border: 0.5px solid rgb(3, 3, 3);
+  border-radius: 10px;
+  box-shadow: 0.5px 0.5px 20px black;
+}
+#mainBody > main #discover > main p {
+  font-size: 1.1em;
+}
+#mainBody > main #discover > footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+#mainBody > main #discover > footer > section {
+  flex: 1;
+}
+#mainBody aside {
+  background-image: url('../assets/9.png');
+  background-repeat: no-repeat;
+
+  width: flex;
+}
+
+#mainBody #sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+  width: 80%;
+  margin: 0 0 0 auto;
+  text-align: left;
+  padding-top: 45px;
+  padding-right: 5px;
+}
+#mainBody #sidebar a {
+  color: #00cc00;
+  text-shadow: 2px 2px rgb(5, 5, 5);
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-bottom: 70px;
+}
+#mainBody #sidebar a:visited {
+  text-shadow: 2px 2px rgb(5, 5, 5);
+  color: #00cc00;
+}
+#mainBody #sidebar a.active {
+  text-shadow: 2px 2px rgb(5, 5, 5);
+  color: #d39e00;
+}
+
+#__page_gallery #mainBody main {
+  margin: 0 auto;
+  width: 640px;
+  padding-bottom: 40px;
+}
+
+#__page_gallery #galleryWrapper {
+  display: grid;
+  grid-template-columns: 246px 246px 246px;
+  grid-gap: 30px;
+  justify-content: center;
+}
+#__page_gallery #galleryWrapper .galleryItem {
+  border: 1px solid black;
+}
+#__page_gallery #galleryWrapper .galleryItem:hover {
+  cursor: pointer;
+}
+#__page_gallery #galleryWrapper .galleryItem img {
+  height: 100%;
+  width: 100%;
+}
+
+#__page_gallery #pagination {
+  display: flex;
+  margin-top: 20px;
+}
+#__page_gallery #pagination > div:nth-child(2) {
+  flex: 1;
+  color: lightgray;
+  text-align: center;
+}
+#__page_gallery #pagination .navlink {
+  min-width: 100px;
+  text-align: center;
+  color: lightgray;
+}
+#__page_gallery #pagination .navlink.isActive {
+  color: black;
+  text-decoration: underline;
+}
+#__page_gallery #pagination .navlink.isActive:hover {
+  cursor: pointer;
+  pointer-events: auto;
+}
+#__page_gallery #pagination .navlink:hover {
+  pointer-events: none;
+}
