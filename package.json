@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@andyet/simplewebrtc": "^1.16.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "classnames": "^2.2.6",
     "date-fns": "^2.9.0",
